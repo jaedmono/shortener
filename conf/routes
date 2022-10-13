@@ -1,0 +1,9 @@
+
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+POST    /api/shorten                controllers.UrlShortenerController.createShortURL
+GET     /:short_url              controllers.UrlShortenerController.redirect(short_url: String)
+
+      
